@@ -7,9 +7,9 @@
     margin-bottom: 25px;
     padding-top: 20px;
     background-image: url("./../../../../assets/bg/post_bg.png");
-    // background-repeat: no-repeat;
+    background-repeat: no-repeat;
     // background-attachment: fixed;
-    // background-position: center; 
+    background-position: center; 
     
 }
 .title {
@@ -28,21 +28,23 @@
     
     img {
         width: 100px;
+        border: 1.5px solid red;
+
     }
 }
 
 .fade-in {
-    animation: fadeIn ease-in-out 2s;
-    -webkit-animation: fadeIn ease-in-out 2s;
-    -moz-animation: fadeIn ease-in-out 2s;
-    -o-animation: fadeIn ease-in-out 2s;
-    -ms-animation: fadeIn ease-in-out 2s;
+    animation: fadeIn ease-in 2s;
+    -webkit-animation: fadeIn ease-in 2s;
+    -moz-animation: fadeIn ease-in 2s;
+    -o-animation: fadeIn ease-in 2s;
+    -ms-animation: fadeIn ease-in 2s;
   }
   
   
   @keyframes fadeIn{
     0% {
-      opacity:0.15;
+      opacity:0.05;
     }
     100% {
       opacity:1;

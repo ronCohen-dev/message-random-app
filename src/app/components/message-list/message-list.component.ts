@@ -14,10 +14,12 @@ export class MessageListComponent implements OnInit {
   REFRESH_TIMEOUT = 2500;
   messages: Message[] = [];
 
-  constructor(private service: MessageService) {}
+  constructor(private service: MessageService) {
+  }
 
+  
   ngOnInit(): void {
-    
+    this.messages = this.service.message.slice(0, this.MAX_MESSAGES_TO_VIEW);
     setInterval(() => {
       // close array into loop to restart over
       if (this.CURRENT_INDEX === 9) {
